@@ -66,6 +66,7 @@ public class PlayerScript : MonoBehaviour
         {
             SceneManager.LoadScene("LoseScene");
         }
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -73,6 +74,7 @@ public class PlayerScript : MonoBehaviour
         {
             Ground = true;
         }
+       
     }
 
 

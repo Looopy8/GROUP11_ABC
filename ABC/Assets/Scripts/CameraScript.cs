@@ -5,6 +5,8 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour
 {
     public GameObject player;
+    public GameObject Pause;
+    public bool isPaused = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,24 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(player.transform.position.x + 6, 0, -10); // Camera follows the player but 6 to the right
+        transform.position = new Vector3(player.transform.position.x + 6, 0, -10);
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+
+            isPaused = !isPaused;
+            Time.timeScale = isPaused ? 0 : 1;
+            if(isPaused == true)
+            {
+                Pause.SetActive(true);
+            }
+            else
+            {
+                Pause.SetActive(false);
+            }
+
+        }
+        
+
     }
+    
 }
