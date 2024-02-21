@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":419.4693298339844,"y":382.4751892089844,"z":-85.37237548828125},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":493.58343505859377,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":0.04411778971552849,"y":0.9167285561561585,"z":-1.2638633251190186},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":12.639826774597168,"orthographic":true}
 >>>>>>> parent of 74e2b15 (123)
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-7.909552574157715,"y":-4.053337574005127,"z":-2.333559036254883},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":23.45756721496582,"orthographic":true}
+>>>>>>> parent of 22cf6d0 (Merge pull request #2 from Looopy8/rafiif)

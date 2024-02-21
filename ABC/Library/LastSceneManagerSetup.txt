@@ -1,9 +1,13 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/Credit.unity
 =======
 - path: Assets/Scenes/FirstStage.unity
 >>>>>>> parent of 74e2b15 (123)
+=======
+- path: Assets/Scenes/ThirdStage.unity
+>>>>>>> parent of 22cf6d0 (Merge pull request #2 from Looopy8/rafiif)
   isLoaded: 1
   isActive: 1
   isSubScene: 0
