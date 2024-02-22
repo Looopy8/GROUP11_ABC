@@ -8,7 +8,7 @@ public class ButtonScript : MonoBehaviour
 
     public void OnClickStart()
     {
-        SceneManager.LoadScene("FirstStage");
+        SceneManager.LoadScene("SecondStage");
     }
 
     public void OnClickCredit()
