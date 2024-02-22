@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -11,7 +12,10 @@ public class PlayerScript : MonoBehaviour
     private bool left = false;
     public Animator animator;
     private bool Ground = true;
-    
+    private float Key;
+    public Text KeyText;
+    public DoorScript Door;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +28,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-
+        
 
         transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
         if (Input.GetKeyDown(KeyCode.Space) && Ground == true)
@@ -32,6 +36,7 @@ public class PlayerScript : MonoBehaviour
             rb.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
             animator.SetTrigger("Jump");
             Ground = false;
+            
         }
 
         if (Input.GetKeyDown(KeyCode.A) && right == true)
@@ -65,8 +70,16 @@ public class PlayerScript : MonoBehaviour
         if(collision.gameObject.tag == "Monster")
         {
             SceneManager.LoadScene("LoseScene");
+
         }
-        
+        if (collision.gameObject.tag == "Diamond")
+        {
+            Key++;
+            KeyText.text = Key + "/1";
+            Destroy(collision.gameObject);
+            Door.Key();
+        }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

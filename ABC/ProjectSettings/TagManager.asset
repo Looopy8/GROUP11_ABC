@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Turn
   - Door
+  - Diamond
   layers:
   - Default
   - TransparentFX

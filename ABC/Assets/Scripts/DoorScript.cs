@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class DoorScript : MonoBehaviour
 {
     public Animator animator;
-    
+    private bool open = false;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -25,7 +26,7 @@ public class DoorScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && open == true)
         {
             
             animator.Play("OpeningDoor");
@@ -41,6 +42,10 @@ public class DoorScript : MonoBehaviour
             animator.Play("ClosingDoor");
 
         }
+    }
+    public void Key()
+    {
+        open = true;
     }
     
 }
