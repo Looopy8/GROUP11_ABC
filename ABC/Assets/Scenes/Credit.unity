@@ -295,7 +295,7 @@ MonoBehaviour:
     and sprites assets.\r\n\nMin Khant\tCreate and design level 2, as well as a lose
     and win scene. Will also have to code in the win and lose condition for the player.\r\n\t\nLionel\tCreate
     and design level 3. Will be responsible for all the codes for level 2 and 3.
-    Will code in enemy, obstacle and player script \r\n\n"
+    Will code in enemy, obstacle , player \rand door script.\n\n"
 --- !u!222 &513419603
 CanvasRenderer:
   m_ObjectHideFlags: 0

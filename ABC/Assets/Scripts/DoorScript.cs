@@ -22,6 +22,7 @@ public class DoorScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E)&& animator.GetCurrentAnimatorStateInfo(0).IsName("OpeningDoor"))
         {
             SceneManager.LoadScene("FirstStage");
+            
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

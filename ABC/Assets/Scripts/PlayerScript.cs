@@ -15,6 +15,7 @@ public class PlayerScript : MonoBehaviour
     private float Key;
     public Text KeyText;
     public DoorScript Door;
+    public Door2Script Door2;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,11 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        
+        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("SecondStage"))
+        {
+            Key++;
+            Door2.Key();
+        }
 
         transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
         if (Input.GetKeyDown(KeyCode.Space) && Ground == true)
